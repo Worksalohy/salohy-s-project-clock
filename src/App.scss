@@ -1,0 +1,92 @@
+@mixin center-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(247, 218, 161);
+}
+
+p{
+    margin: 30px 0px 0px 1px;
+    color: rgb(247, 218, 161)
+}
+
+#main-container {
+    @include center-page();
+    flex-direction: column;
+    width: 100dvw;
+    height: 100vh;
+    background-color: rgb(5, 73, 53)
+}
+
+#first-clock-pannel {
+    @include center-page();
+    gap: 50px;
+}
+
+#break-length, #session-length {
+    font-size: 2.2rem;
+    color: rgb(247, 218, 161);
+}
+
+
+
+#clock {
+    @include center-page();
+    flex-direction: column;
+    margin: 0;
+    border: 4px rgb(247, 205, 20) solid;
+    border-radius: 50%;
+    width: 280px;
+    height: 280px;
+    background-color: rgb(21, 41, 34);
+}
+
+#time-left {
+    font-size: 5rem;
+    color: rgb(247, 218, 161);
+}
+
+#timer-label {
+    font-size: 1.5rem;
+    color: rgb(247, 218, 161);
+}
+
+.pannel {
+    @include center-page();
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    border: 1px rgb(247, 205, 20) solid;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    background-color: rgb(21, 41, 34);
+}
+
+.pannel-element {
+    @include center-page();
+}
+
+#start_stop, #reset {
+    background-position: center;
+    background-color: transparent;
+}
+
+#break-decrement, #session-decrement, #break-increment, #session-increment{
+    background-position: center;
+    background-color: transparent;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+}
+
+#clock-control {
+    @include center-page();
+    width: 200px;
+    border-top: 4px rgb(247, 205, 20) solid;
+    border-radius: 20px;
+    padding-top: 10px;
+}
